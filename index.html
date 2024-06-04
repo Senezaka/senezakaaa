@@ -40,6 +40,19 @@
             </div>
         </div>
     </section>
+    <section id="connect">
+      <div class="connect-info">
+          <h2>Connect</h2>
+          <p>Here are my CV (Curriculum Vitae) and also a Linktree.
+          </p>
+          <br>
+          <button onclick="downloadFile()">Download CV</button>
+          <br>
+          <a href="https://linktr.ee/kunnafis">
+          <button>Linktree Page</button>
+          </a>
+      </div>
+  </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
     <script>
         var typed = new Typed("#title", {
@@ -47,6 +60,18 @@
             typeSpeed: 75,
             loop: true
         });
+        function downloadFile() {
+            var element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent('Hello, this is the content of the file.'));
+            element.setAttribute('download', 'example.txt');
+
+            element.style.display = 'none';
+            document.body.appendChild(element);
+
+            element.click();
+
+            document.body.removeChild(element);
+        }
     </script>
 </body>
 </html>
