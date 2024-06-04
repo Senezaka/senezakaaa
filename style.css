@@ -76,19 +76,13 @@ h1 {
     font-size: 60px;
 }
 
-#profile {
+#profile{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2em;
     background-color: #f9f9f9;
     width: 100%;
-}
-
-.profile-container {
-    display: flex;
-    gap: 2em;
-    max-width: 1200px;
 }
 
 .profile-info {
@@ -118,4 +112,48 @@ h1 {
 
 .socmed-icon a:hover {
     transform: scale(1.5);
+}
+
+#connect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  background-color: #000000;
+  width: 100%;
+}
+
+.connect-info {
+  max-width: 600px;
+}
+
+.connect-info h2 {
+  display: flex;
+  margin-bottom: 0.5em;
+  align-items: center;
+  justify-content: center;
+  color: #f9f9f9;
+}
+
+.connect-info p {
+  line-height: 1.6;
+  color: #f9f9f9;
+}
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: none;
+  color: #f9f9f9;
+  border-color: #f9f9f9;
+  margin-left: 150px;
+  transition: color 0.3s ease;
+  overflow: hidden;
+}
+button:hover{
+cursor: pointer;
+box-shadow: 0 0 10px white;
+                 transform: scale(1.1);
 }
