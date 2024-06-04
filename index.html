@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senezaka | Future Front-End</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <p>Senezakaaaa.</p>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#profile">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-content">
+        <h1>
+            <span id="title"></span>
+        </h1>
+    </div>
+    <section id="profile">
+        <div class="profile-info">
+            <h2>Let's Collaborate!</h2>
+            <p>Great to see you, I'm Muhammad Nafis Azzaky Hendrawan,
+                a Software Engineering student from SMKN 4 Bandung!
+                With a heart full of curiosity and a mind brimming with innovative ideas,
+                I always ready to dive into exciting new projects.
+                Always ready for opportunities to a collaboration!
+            </p>
+            <br>
+            <div class="socmed-icon">
+                <a href="https://www.instagram.com/kunnafis/"><box-icon name='instagram' type='logo' ></box-icon></a> 
+                <a href="https://www.linkedin.com/in/muhammad-nafis-azzaky-hendrawan-2074b2294"><box-icon name='linkedin-square' type='logo' ></box-icon></a>
+                <a href="https://github.com/Senezaka"><box-icon name='github' type='logo' ></box-icon></a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#title", {
+            strings: ["Hi, Folks! It's Senezaka.", "Nice to meet you!"],
+            typeSpeed: 75,
+            loop: true
+        });
+    </script>
+</body>
+</html>

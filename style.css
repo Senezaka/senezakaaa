@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav-links a:hover {
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 40px white;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #fffbfb;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.profile-container {
+    display: flex;
+    gap: 2em;
+    max-width: 1200px;
+}
+
+.profile-info {
+    max-width: 600px;
+}
+
+.profile-info h2 {
+    display: flex;
+    margin-bottom: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-info p {
+    line-height: 1.6;
+}
+.socmed-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.socmed-icon a {
+    display: inline-block;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.socmed-icon a:hover {
+    transform: scale(1.5);
+}
